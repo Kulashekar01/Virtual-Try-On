@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On System</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Try-On System</h1>
+        
+        <div class="disclaimer">
+            <p>See It, Style It, Try It – Virtually!</p>
+        </div>
+
+        <div class="upload-container">
+            <!-- Person Image Upload Section -->
+            <div class="upload-section">
+                <h2>Step 1. Upload a person image</h2>
+                <div class="upload-box" id="personUpload">
+                    <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
+                    <p>Drop Image Here</p>
+                    <p class="or">- or -</p>
+                    <p>Click to Upload</p>
+                    <input type="file" class="file-input" accept="image/*">
+                </div>
+                <div class="preview" id="personPreview"></div>
+            </div>
+
+            <!-- Garment Image Upload Section -->
+            <div class="upload-section">
+                <h2>Step 2. Upload a garment image</h2>
+                <div class="upload-box" id="garmentUpload">
+                    <img src="upload-icon.png" alt="Upload Icon" class="upload-icon">
+                    <p>Drop Image Here</p>
+                    <p class="or">- or -</p>
+                    <p>Click to Upload</p>
+                    <input type="file" class="file-input" accept="image/*">
+                </div>
+                <div class="preview" id="garmentPreview"></div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="upload-section">
+                <h2>Step 3. Press "Run" to get results</h2>
+                <div class="result-box" id="resultBox">
+                    <p>Upload images and click Run to see the result</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="seed-control">
+                <label for="seed">Seed:</label>
+                <input type="number" id="seed" value="0">
+                <label>
+                    <input type="checkbox" id="randomSeed"> Random seed
+                </label>
+            </div>
+            <button id="runButton" class="run-button">Run</button>
+        </div>
+    </div>
+    <script type="module" src="/src/script.js"></script>
+</body>
+</html> 
