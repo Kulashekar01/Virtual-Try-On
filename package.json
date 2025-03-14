@@ -1,0 +1,22 @@
+{
+    "name": "user_interface",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "devDependencies": {
+      "vite": "^5.0.0"
+    },
+    "dependencies": {
+      "@gradio/client": "latest"
+    },
+    "main": "script.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+  }

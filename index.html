@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On System</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Virtual Try-On System</h1>
+            <p class="tagline">See It, Style It, Try It – Virtually!</p>
+        </header>
+
+        <div class="upload-container">
+            <!-- Person Image Upload Section -->
+            <div class="upload-section">
+                <h2><i class="fas fa-user"></i> Step 1. Upload a person image</h2>
+                <div class="upload-area">
+                    <div class="upload-box" id="personUpload">
+                        <div class="upload-content">
+                            <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                            <p>Drop Image Here</p>
+                            <p class="or">- or -</p>
+                            <button class="upload-btn">Choose File</button>
+                            <input type="file" class="file-input" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="preview" id="personPreview"></div>
+                </div>
+            </div>
+
+            <!-- Garment Image Upload Section -->
+            <div class="upload-section">
+                <h2><i class="fas fa-tshirt"></i> Step 2. Upload a garment image</h2>
+                <div class="upload-area">
+                    <div class="upload-box" id="garmentUpload">
+                        <div class="upload-content">
+                            <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                            <p>Drop Image Here</p>
+                            <p class="or">- or -</p>
+                            <button class="upload-btn">Choose File</button>
+                            <input type="file" class="file-input" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="preview" id="garmentPreview"></div>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="upload-section">
+                <h2><i class="fas fa-magic"></i> Step 3. See the magic happen</h2>
+                <div class="result-box" id="resultBox">
+                    <p>Upload images and click Generate to see the result</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="seed-control">
+                <label for="seed">Seed:</label>
+                <input type="number" id="seed" value="0">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="randomSeed">
+                    <span>Random seed</span>
+                </label>
+            </div>
+            <button id="runButton" class="run-button">
+                <i class="fas fa-wand-magic-sparkles"></i>
+                Generate
+            </button>
+        </div>
+    </div>
+    <script type="module" src="/src/script.js"></script>
+</body>
+</html> 
